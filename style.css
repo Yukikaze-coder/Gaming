@@ -466,7 +466,7 @@ header{
 }
 
 
-/* Auto diplay animation */
+/* Auto display animation */
 .autoDisplay {
     animation: autoDisplayAnimation both;
     animation-timeline: view(70% 5%);
