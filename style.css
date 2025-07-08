@@ -90,7 +90,7 @@ header{
 }
 
 .hero-info h1{
-    font-size: 100px;
+    font-size: 120px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
     font-size: normal;
@@ -499,7 +499,7 @@ header{
         left: 5%;
     }
     .hero-section h1{
-        font-size: 90px;
+        font-size: 70px;
     }
     .next-btn{
         left: 25%;
@@ -535,7 +535,7 @@ header{
         left: -40px;
         bottom: 0;
         width: 150px;
-        height: 180px;
+        height: 120px;
     }
     .contact-section h1{
         font-size: 60px;
@@ -550,5 +550,13 @@ header{
     .stones-img{
         margin-top: 80%;
         width: 400px;
+    }
+    .card p {
+        font-size: 12px;
+        max-width: 140px;
+        padding: 6px 8px;
+        top: 60px;
+        left: 3%;
+        word-break: break-word;
     }
 }
