@@ -569,4 +569,15 @@ header{
         left: 5%;
         top: 10px;
     }
+    .card:last-child h1 {
+        font-size: clamp(22px, 8vw, 36px);
+        max-width: 95%;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: unset;
+        word-break: break-word;
+        text-align: left;
+        line-height: 1.1;
+        display: block;
+    }
 }
