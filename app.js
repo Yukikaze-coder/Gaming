@@ -12,3 +12,12 @@ nextButton.addEventListener('click', () => {
         index = -1;
     }
 });
+
+// Play background music on first user interaction
+window.addEventListener('click', function playMusicOnce() {
+    var audio = document.querySelector('audio');
+    if (audio) {
+        audio.play();
+    }
+    window.removeEventListener('click', playMusicOnce);
+});
