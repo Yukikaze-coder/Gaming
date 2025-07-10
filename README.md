@@ -42,7 +42,7 @@ A visually rich, modern landing page for a gaming/metaverse platform called **NO
 - **Design & Development:** [Yukikaze-Coder]
 - **Icons:** [Boxicons](https://boxicons.com/)
 - **Fonts:** [Google Fonts - Montserrat](https://fonts.google.com/specimen/Montserrat)
-- **Echoes.mp3** [MUSICHERO-AI]
+- **Valkyrie.mp3** [Black Bamboo]
 
 ---
 
