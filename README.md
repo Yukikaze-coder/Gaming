@@ -1,6 +1,8 @@
 # Gaming Web App
 A visually rich, modern landing page for a gaming/metaverse platform called **NOVA/Zentry**. This web app showcases products, features, and community engagement for a cross-platform metagame experience.
 
+![alt text](img/thumbnail.png)
+
 [Live Demo](https://gaming-50q0.onrender.com)
 
 ## Features
