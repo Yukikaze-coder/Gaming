@@ -45,7 +45,7 @@ header{
     border-radius: 20px;
     font-weight: 700;
     cursor: pointer;
-    transition: 0.3s;
+    transition: opacity 0.3s ease;
 }
 
 .head-left button:hover {
@@ -93,7 +93,6 @@ header{
     font-size: 120px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
-    font-size: normal;
     margin-top: 30px;
     margin-bottom: 20px;
 }
@@ -110,7 +109,7 @@ header{
     border-radius: 20px;
     cursor: pointer;
     color: black;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .hero-info button:hover{
@@ -142,18 +141,23 @@ header{
     justify-content: center;
     color: black;
     font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
     cursor: pointer;
     z-index: 100;
-    opacity: 0;
-    transition: 0.5s;
+    transition: all 0.3s ease;
 }
 
 .next-btn:hover{
-    width: 200px;
-    height: 200px;
-    opacity: 1;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.616);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+.next-btn.music-active {
+    opacity: 0.3;
+}
+
+.next-btn.music-active:hover {
+    opacity: 0.5;
 }
 
 .about-section{
@@ -186,14 +190,8 @@ header{
     font-size: 12px;
 }
 
-.about-section h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 900;
-    font-size: 100px;
-    max-width: 1150px;
-    text-align: center;
-    margin: 25px 0;
-    text-transform: uppercase;
+/* Shared gradient text style */
+.gradient-text {
     background: linear-gradient(to right, #4acfee, #53f8c9, #02D79a, #6070fd, #2a46ff, #0099ff, #4acfee);
     background-size: 200%;
     background-clip: text;
@@ -206,6 +204,16 @@ header{
     to {
         background-position: 200%;
     }
+}
+
+.about-section h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    font-size: 100px;
+    max-width: 1150px;
+    text-align: center;
+    margin: 25px 0;
+    text-transform: uppercase;
 }
 
 .about-section h4{
@@ -256,7 +264,7 @@ header{
     overflow: hidden;
     border: 1px solid gray;
     border-radius: 20px;
-    transition: 0.5s;
+    transition: box-shadow 0.3s ease;
 }
 
 .card h1{
@@ -266,14 +274,8 @@ header{
     left: 5%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 60px;
-    z-index: 1;
-    background: linear-gradient(to right, #4acfee, #53f8c9, #02D79a, #6070fd, #2a46ff, #0099ff, #4acfee);
-    background-size: 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animate-gradient 2.5s linear infinite;
     max-width: 250px;
+    z-index: 1;
 }
 
 .card p{
@@ -291,10 +293,8 @@ header{
     object-fit: cover;
 }
 
-.card button{
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
+/* Shared button style */
+.styled-button {
     padding: 10px 25px;
     border: 1px solid gray;
     background-color: #0f1217;
@@ -302,16 +302,22 @@ header{
     border-radius: 20px;
     box-shadow: 0 0 5px lightgray;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
-.card button:hover{
+.styled-button:hover {
     box-shadow: 0 0 15px lightgray;
     opacity: 0.7;
 }
 
+.card button{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
 .card:hover{
-    box-shadow: 0 0 15px white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
 }
 
 .card:nth-child(1){
@@ -325,13 +331,12 @@ header{
 
 .contact-section{
     position: relative;
-    width: 100%;    
-    margin-top: 100px;
+    width: 100%;
+    margin: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
-    margin-bottom: 100px;
 }
 
 .contact-section .img1{
@@ -368,28 +373,6 @@ header{
     font-size: 70px;
     max-width: 550px;
     text-align: center;
-    background: linear-gradient(to right, #4acfee, #53f8c9, #02D79a, #6070fd, #2a46ff, #0099ff, #4acfee);
-    background-size: 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animate-gradient 2.5s linear infinite;
-}
-
-.contact-section button{
-    padding: 10px 25px;
-    border: 1px solid gray;
-    background-color: #0f1217;
-    color: gray;
-    border-radius: 20px;
-    box-shadow: 0 0 5px lightgray;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.contact-section button:hover{
-    box-shadow: 0 0 15px lightgray;
-    opacity: 0.7;
 }
 
 .footer{
