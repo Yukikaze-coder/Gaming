@@ -13,18 +13,8 @@ video.addEventListener('ended', () => {
 // Music control button logic
 const nextButton = document.querySelector('.next-btn');
 const audio = document.querySelector('audio');
-let musicPlaying = false;
 
 nextButton.addEventListener('click', () => {
-    musicPlaying = !musicPlaying;
-    
-    if (musicPlaying) {
-        audio.play();
-        nextButton.textContent = 'MUSIC ON';
-        nextButton.classList.add('music-active');
-    } else {
-        audio.pause();
-        nextButton.textContent = 'CLICK HERE';
-        nextButton.classList.remove('music-active');
-    }
+    audio.play();
+    nextButton.style.display = 'none';
 });
