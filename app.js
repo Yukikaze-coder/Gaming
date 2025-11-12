@@ -13,8 +13,19 @@ video.addEventListener('ended', () => {
 // Music control button logic
 const nextButton = document.querySelector('.next-btn');
 const audio = document.querySelector('audio');
+let musicStarted = false;
 
-nextButton.addEventListener('click', () => {
-    audio.play();
-    nextButton.style.display = 'none';
-});
+// Function to start music and hide button
+function startMusic() {
+    if (!musicStarted) {
+        audio.play();
+        nextButton.style.display = 'none';
+        musicStarted = true;
+    }
+}
+
+// Start music on button click
+nextButton.addEventListener('click', startMusic);
+
+// Start music on any click on the page
+document.addEventListener('click', startMusic);
